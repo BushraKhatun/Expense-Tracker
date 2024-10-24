@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="5642529-hd_1920_1080_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <audio id="background-music" loop>
+        <source src="zero.mp3" type="audio/mp3">
+    </audio>
+    <audio id="background-music-2" loop>
+        <source src="17294482752959ran3mnpm-voicemaker.in-speech.mp3" type="audio/mp3">
+    </audio>
+    
+    <div class="container"> 
+        <h1>🤍 My Expense Tracker 🤍</h1> 
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Expense Name" required>
+            <input type="number" id="expense-amount" placeholder="Amount" required>
+            <select id="expense-category" required>
+                <option value="">Select Category</option>
+            </select>
+            <input type="date" id="expense-date" required>
+            <input type="text" id="new-category" placeholder="Add New Category" />
+            <button type="submit">Add Expense</button>
+            <button type="button" id="add-category-button">Add Category</button>
+        </form>
+        <div class="buttons">
+            <button id="play-background-music">Music-Here</button>
+            <button id="total-expense-button">Total Expense</button>
+            <button id="detail-expense-button">Detailed Expenses</button>
+            <button id="play-music-2">😄</button>
+        </div>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
